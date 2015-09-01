@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>School Law App</key>
+	<array>
+		<array>
+			<dict>
+				<key>Article 11</key>
+				<array>
+					<string>A00110.pdf</string>
+				</array>
+				<key>Article 7</key>
+				<array>
+					<string>A00070.pdf</string>
+				</array>
+			</dict>
+			<dict>
+				<key>Article 1</key>
+				<array>
+					<string>A00010 (2).pdf</string>
+				</array>
+			</dict>
+			<dict>
+				<key>Article 14</key>
+				<array>
+					<string>A00140 (1).pdf</string>
+				</array>
+				<key>Article 16</key>
+				<array>
+					<string>A00160.pdf</string>
+				</array>
+				<key>Article 17</key>
+				<array>
+					<string>A00170.pdf</string>
+				</array>
+				<key>Article 18</key>
+				<array>
+					<string>A00180.pdf</string>
+				</array>
+				<key>Article 19</key>
+				<array>
+					<string>A00190.pdf</string>
+				</array>
+			</dict>
+			<dict>
+				<key>Article 1</key>
+				<array/>
+			</dict>
+			<dict>
+				<key>Article 1</key>
+				<array/>
+				<key>Article 33</key>
+				<array/>
+				<key>Article 6</key>
+				<array/>
+			</dict>
+			<dict>
+				<key>Article 16</key>
+				<array>
+					<string>A00160 (1).pdf</string>
+				</array>
+				<key>Article 9</key>
+				<array>
+					<string>A00090.pdf</string>
+				</array>
+			</dict>
+			<dict>
+				<key>Article 1</key>
+				<array>
+					<string>A00010 (1).pdf</string>
+				</array>
+			</dict>
+		</array>
+		<dict>
+			<key>Title 1</key>
+			<dict>
+				<key>Article 1</key>
+				<array>
+					<string>Chapter 10.pdf</string>
+					<string>Chapter 11.pdf</string>
+					<string>Chapter 12.5.pdf</string>
+					<string>Chapter 12.pdf</string>
+					<string>Chapter 13.pdf</string>
+					<string>Chapter 14.pdf</string>
+					<string>Chapter 4.pdf</string>
+					<string>Chapter 9.pdf</string>
+				</array>
+				<key>Article 2</key>
+				<array>
+					<string>Chapter 2.pdf</string>
+					<string>Chapter 3.pdf</string>
+				</array>
+			</dict>
+			<key>Title 10</key>
+			<dict>
+				<key>Article 13</key>
+				<array>
+					<string>Chapter 1.pdf</string>
+					<string>Chapter 2.pdf</string>
+					<string>Chapter 3.pdf</string>
+					<string>Chapter 5.pdf</string>
+				</array>
+				<key>Article 14</key>
+				<array>
+					<string>Chapter 3.pdf</string>
+					<string>Chapter 6.5.pdf</string>
+				</array>
+				<key>Article 16</key>
+				<array>
+					<string>Chapter 7.pdf</string>
+					<string>Chapter 8.pdf</string>
+				</array>
+				<key>Article 17</key>
+				<array>
+					<string>Chapter 4.pdf</string>
+				</array>
+				<key>Article 21</key>
+				<array>
+					<string>Chapter 1.pdf</string>
+				</array>
+			</dict>
+			<key>Title 11</key>
+			<dict>
+				<key>Article 10</key>
+				<array>
+					<string>Chapter 5.pdf</string>
+				</array>
+				<key>Article 8</key>
+				<array>
+					<string>Chapter 2.pdf</string>
+					<string>Chapter 8.pdf</string>
+				</array>
+			</dict>
+			<key>Title 12</key>
+			<dict>
+				<key>Article 15</key>
+				<array>
+					<string>Chapter 1.pdf</string>
+				</array>
+				<key>Article 17</key>
+				<array>
+					<string>Chapter 12.pdf</string>
+					<string>Chapter 19.pdf</string>
+				</array>
+				<key>Article 17.2</key>
+				<array>
+					<string>Chapter 2.pdf</string>
+				</array>
+				<key>Article 21</key>
+				<array>
+					<string>Chapter 5.pdf</string>
+				</array>
+				<key>Article 32</key>
+				<array>
+					<string>Chapter 1.pdf</string>
+				</array>
+				<key>Article 7</key>
+				<array>
+					<string>Chapter 2.pdf</string>
+				</array>
+			</dict>
+			<key>Title 13</key>
+			<dict>
+				<key>Article 17</key>
+				<array/>
+				<key>Article 18</key>
+				<array/>
+				<key>Article 20</key>
+				<array/>
+			</dict>
+			<key>Title 16</key>
+			<string></string>
+			<key>Title 2</key>
+			<string></string>
+			<key>Title 20</key>
+			<string></string>
+			<key>Title 21</key>
+			<string></string>
+			<key>Title 22</key>
+			<string></string>
+			<key>Title 24</key>
+			<string></string>
+			<key>Title 25</key>
+			<string></string>
+			<key>Title 26</key>
+			<string></string>
+			<key>Title 27</key>
+			<string></string>
+			<key>Title 3</key>
+			<string></string>
+			<key>Title 31</key>
+			<string></string>
+			<key>Title 32</key>
+			<string></string>
+			<key>Title 33</key>
+			<string></string>
+			<key>Title 34</key>
+			<string></string>
+			<key>Title 35</key>
+			<string></string>
+			<key>Title 36</key>
+			<string></string>
+			<key>Title 4</key>
+			<string></string>
+			<key>Title 5</key>
+			<string></string>
+			<key>Title 7.1</key>
+			<string></string>
+			<key>Title 8</key>
+			<string></string>
+			<key>Title 9</key>
+			<string></string>
+		</dict>
+		<dict/>
+	</array>
+</dict>
+</plist>

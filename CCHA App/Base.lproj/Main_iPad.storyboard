@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="xEf-3x-5dg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--CCHA-->
+        <scene sceneID="kiX-xy-34Q">
+            <objects>
+                <viewController title="CCHA" id="uoL-RJ-gv1" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v1Z-fZ-v2g"/>
+                        <viewControllerLayoutGuide type="bottom" id="LmM-jT-uTE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0ty-0m-Hyh">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBP-FO-i07">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sponsored By" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQx-9I-07z">
+                                        <rect key="frame" x="316" y="27" width="137" height="28"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CCHA-horizontal2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Jrf-Ry-M39">
+                                        <rect key="frame" x="10" y="92" width="749" height="106"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfg-xy-Sei">
+                                        <rect key="frame" x="241" y="248" width="287" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                        <state key="normal" title="School Laws">
+                                            <color key="titleColor" red="0.38008413359999998" green="0.41066552820000002" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SchoolLawButton:" destination="uoL-RJ-gv1" eventType="touchUpInside" id="ZLd-c0-UhF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCx-lp-jtt">
+                                        <rect key="frame" x="92" y="362" width="585" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                        <state key="normal" title="Title &amp; Case Name Search">
+                                            <color key="titleColor" red="0.38008413359999998" green="0.41066552820000002" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="titlePressed:" destination="uoL-RJ-gv1" eventType="touchUpInside" id="09D-ge-YEY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ma0-on-W9Y">
+                                        <rect key="frame" x="240" y="481" width="288" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                        <state key="normal" title="My Favorites">
+                                            <color key="titleColor" red="0.38008413359999998" green="0.41066552820000002" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="1PV-sP-bum" kind="push" id="bnS-wE-fqZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTK-zk-M5f">
+                                        <rect key="frame" x="218" y="592" width="333" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                        <state key="normal" title="Contact CCHA">
+                                            <color key="titleColor" red="0.38008413359999998" green="0.41066552820000002" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="kfo-e9-bCE" kind="push" id="fS8-3e-YEX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeJ-TG-Ni3">
+                                        <rect key="frame" x="199" y="698" width="370" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                        <state key="normal" title="CCHA Guidance">
+                                            <color key="titleColor" red="0.38008413359999998" green="0.41066552820000002" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="LY6-H1-kGc" kind="push" id="IJa-VU-fdM"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Clients Only)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2b-yJ-rdT">
+                                        <rect key="frame" x="324" y="759" width="120" height="26"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43u-BD-ogv">
+                                        <rect key="frame" x="146" y="806" width="476" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                        <state key="normal" title="Additional Resources">
+                                            <color key="titleColor" red="0.38008413359999998" green="0.41066552820000002" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="0ev-8s-4m8" kind="push" id="6IM-Nz-xpJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfK-bi-Oed">
+                                        <rect key="frame" x="350" y="892" width="69" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Restore">
+                                            <color key="titleColor" red="0.38008413359999998" green="0.41066552820000002" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="restorePurchasePressed:" destination="uoL-RJ-gv1" eventType="touchUpInside" id="LVK-a3-LQf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJm-x4-2X6">
+                                        <rect key="frame" x="16" y="892" width="96" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Legal">
+                                            <color key="titleColor" red="0.38008413359999998" green="0.41066552820000002" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="legalButtonPressed:" destination="uoL-RJ-gv1" eventType="touchUpInside" id="nrh-zp-W2X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDx-2G-KdT">
+                                        <rect key="frame" x="658" y="892" width="89" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Feedback">
+                                            <color key="titleColor" red="0.38008413359999998" green="0.41066552820000002" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="feedBackButtonPressed:" destination="uoL-RJ-gv1" eventType="touchUpInside" id="HDb-dG-hsM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="bCx-lp-jtt" secondAttribute="centerX" id="1Wa-qt-gpq"/>
+                                    <constraint firstItem="43u-BD-ogv" firstAttribute="top" secondItem="q2b-yJ-rdT" secondAttribute="bottom" constant="21" id="5j0-wo-yQE"/>
+                                    <constraint firstItem="ma0-on-W9Y" firstAttribute="top" secondItem="bCx-lp-jtt" secondAttribute="bottom" constant="48" id="7Qk-a7-hme"/>
+                                    <constraint firstItem="NQx-9I-07z" firstAttribute="top" secondItem="lBP-FO-i07" secondAttribute="topMargin" constant="19" id="7vG-0R-UTh"/>
+                                    <constraint firstItem="q2b-yJ-rdT" firstAttribute="top" secondItem="UeJ-TG-Ni3" secondAttribute="bottom" constant="-10" id="91p-7K-sMz"/>
+                                    <constraint firstItem="UJm-x4-2X6" firstAttribute="leading" secondItem="lBP-FO-i07" secondAttribute="leading" constant="16" id="Ave-4K-2l6"/>
+                                    <constraint firstItem="xDx-2G-KdT" firstAttribute="leading" secondItem="cfK-bi-Oed" secondAttribute="trailing" constant="239" id="Dfb-np-ECJ"/>
+                                    <constraint firstItem="MTK-zk-M5f" firstAttribute="top" secondItem="ma0-on-W9Y" secondAttribute="bottom" constant="40" id="I4Z-RY-PYy"/>
+                                    <constraint firstAttribute="centerX" secondItem="cfK-bi-Oed" secondAttribute="centerX" id="JPC-ez-M1h"/>
+                                    <constraint firstItem="UeJ-TG-Ni3" firstAttribute="top" secondItem="MTK-zk-M5f" secondAttribute="bottom" constant="35" id="Jua-qi-tQg"/>
+                                    <constraint firstAttribute="trailing" secondItem="xDx-2G-KdT" secondAttribute="trailing" constant="22" id="LtX-MZ-u15"/>
+                                    <constraint firstItem="cfK-bi-Oed" firstAttribute="leading" secondItem="UJm-x4-2X6" secondAttribute="trailing" constant="238" id="OpY-hl-s0T"/>
+                                    <constraint firstAttribute="centerX" secondItem="NQx-9I-07z" secondAttribute="centerX" id="TEu-qX-jPY"/>
+                                    <constraint firstAttribute="centerX" secondItem="qfg-xy-Sei" secondAttribute="centerX" id="THF-xA-jf3"/>
+                                    <constraint firstAttribute="centerX" secondItem="ma0-on-W9Y" secondAttribute="centerX" id="TgO-2S-6mR"/>
+                                    <constraint firstAttribute="centerX" secondItem="q2b-yJ-rdT" secondAttribute="centerX" id="bMX-lG-lON"/>
+                                    <constraint firstItem="xDx-2G-KdT" firstAttribute="top" secondItem="43u-BD-ogv" secondAttribute="bottom" constant="15" id="cf4-T4-bH1"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jrf-Ry-M39" secondAttribute="trailing" constant="10" id="dEs-uz-Toc"/>
+                                    <constraint firstAttribute="bottom" secondItem="xDx-2G-KdT" secondAttribute="bottom" constant="32" id="eUG-5a-KOj"/>
+                                    <constraint firstItem="UJm-x4-2X6" firstAttribute="top" secondItem="43u-BD-ogv" secondAttribute="bottom" constant="15" id="g7l-bz-djR"/>
+                                    <constraint firstAttribute="centerX" secondItem="43u-BD-ogv" secondAttribute="centerX" id="jKW-RM-sTo"/>
+                                    <constraint firstAttribute="centerX" secondItem="Jrf-Ry-M39" secondAttribute="centerX" id="lE3-Qh-qE9"/>
+                                    <constraint firstAttribute="centerX" secondItem="MTK-zk-M5f" secondAttribute="centerX" id="n96-aI-2ki"/>
+                                    <constraint firstItem="qfg-xy-Sei" firstAttribute="top" secondItem="Jrf-Ry-M39" secondAttribute="bottom" constant="50" id="pvD-vf-huW"/>
+                                    <constraint firstItem="Jrf-Ry-M39" firstAttribute="leading" secondItem="lBP-FO-i07" secondAttribute="leading" constant="10" id="qad-RZ-n57"/>
+                                    <constraint firstAttribute="centerX" secondItem="UeJ-TG-Ni3" secondAttribute="centerX" id="rAF-8o-G8E"/>
+                                    <constraint firstItem="cfK-bi-Oed" firstAttribute="top" secondItem="43u-BD-ogv" secondAttribute="bottom" constant="15" id="uZj-kp-zoQ"/>
+                                    <constraint firstItem="Jrf-Ry-M39" firstAttribute="top" secondItem="NQx-9I-07z" secondAttribute="bottom" constant="37" id="voF-lQ-lSr"/>
+                                    <constraint firstItem="bCx-lp-jtt" firstAttribute="top" secondItem="qfg-xy-Sei" secondAttribute="bottom" constant="43" id="xW8-Su-oRl"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lBP-FO-i07" firstAttribute="leading" secondItem="0ty-0m-Hyh" secondAttribute="leading" id="2P0-mz-AKt"/>
+                            <constraint firstItem="LmM-jT-uTE" firstAttribute="top" secondItem="lBP-FO-i07" secondAttribute="bottom" id="HlI-Qp-Tiz"/>
+                            <constraint firstItem="lBP-FO-i07" firstAttribute="top" secondItem="v1Z-fZ-v2g" secondAttribute="bottom" id="pzX-F6-QHE"/>
+                            <constraint firstAttribute="trailing" secondItem="lBP-FO-i07" secondAttribute="trailing" id="tG1-6G-lnk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="INSchoolLaw" id="SFe-9B-X01">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="aa9-gN-j5O"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="bNK-kf-Srl" kind="push" identifier="CaseSearch" id="0S1-0I-5j3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pSx-HS-zVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="-190"/>
+        </scene>
+        <!--Favorite Table View Controller-->
+        <scene sceneID="7fb-zb-OEE">
+            <objects>
+                <tableViewController id="1PV-sP-bum" customClass="FavoriteTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iIT-Hx-lY2">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Rda-NK-foq" style="IBUITableViewCellStyleDefault" id="OBn-an-CEl">
+                                <rect key="frame" x="0.0" y="86" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OBn-an-CEl" id="VzO-lg-9ki">
+                                    <rect key="frame" x="0.0" y="0.0" width="735" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rda-NK-foq">
+                                            <rect key="frame" x="15" y="0.0" width="718" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1PV-sP-bum" id="lUM-IQ-6pC"/>
+                            <outlet property="delegate" destination="1PV-sP-bum" id="NaY-1o-L0j"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="bSd-qA-sw6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B1O-lX-xCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3368" y="-1394"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="sYi-G5-baz">
+            <objects>
+                <viewController id="bNK-kf-Srl" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u0D-ac-sSK"/>
+                        <viewControllerLayoutGuide type="bottom" id="73N-IP-dsi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="17u-g4-ejF">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bP2-ae-hi3">
+                                <rect key="frame" x="0.0" y="11" width="768" height="1013"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="prominent" text="" placeholder="Search Case Names, Articles, and Chapter Titles (Not Content) " id="S1F-sz-x7k">
+                                    <rect key="frame" x="0.0" y="64" width="768" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="bNK-kf-Srl" id="zBe-LV-8UA"/>
+                                    </connections>
+                                </searchBar>
+                                <connections>
+                                    <outlet property="dataSource" destination="bNK-kf-Srl" id="WeK-Ab-ZMv"/>
+                                    <outlet property="delegate" destination="bNK-kf-Srl" id="0oL-Lg-N1c"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bP2-ae-hi3" firstAttribute="leading" secondItem="17u-g4-ejF" secondAttribute="leading" id="95d-8z-Ydg"/>
+                            <constraint firstItem="bP2-ae-hi3" firstAttribute="bottom" secondItem="73N-IP-dsi" secondAttribute="top" id="Rhs-eE-gqh"/>
+                            <constraint firstAttribute="trailing" secondItem="bP2-ae-hi3" secondAttribute="trailing" id="dBb-z4-J2T"/>
+                            <constraint firstItem="bP2-ae-hi3" firstAttribute="top" secondItem="17u-g4-ejF" secondAttribute="top" constant="11" id="jM0-cp-zZt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="fMB-aO-Zco"/>
+                    <connections>
+                        <outlet property="searchBar" destination="S1F-sz-x7k" id="E9G-zR-Dh7"/>
+                        <outlet property="searchDisplayController" destination="6IM-xo-X1n" id="gP8-VD-Z6U"/>
+                        <outlet property="tableView" destination="bP2-ae-hi3" id="PWk-Z9-6TC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z6o-u7-Rm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="6IM-xo-X1n">
+                    <connections>
+                        <outlet property="delegate" destination="bNK-kf-Srl" id="aHN-gR-Fm1"/>
+                        <outlet property="searchBar" destination="S1F-sz-x7k" id="q0v-My-XI4"/>
+                        <outlet property="searchContentsController" destination="bNK-kf-Srl" id="Vcr-Rn-0Bg"/>
+                        <outlet property="searchResultsDataSource" destination="bNK-kf-Srl" id="d9m-6w-E26"/>
+                        <outlet property="searchResultsDelegate" destination="bNK-kf-Srl" id="NF6-eG-0qt"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="3413" y="-115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZLa-1P-8FH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xEf-3x-5dg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wmn-8i-cJB">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uoL-RJ-gv1" kind="relationship" relationship="rootViewController" id="EfX-42-oSi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbZ-MJ-5lG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-524" y="-182"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="sZ9-t8-XwB">
+            <objects>
+                <viewController id="kfo-e9-bCE" customClass="ContactUsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z0w-jr-Rjq"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Jt-yC-lYk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ufJ-kx-tXI">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2P-Df-gGI">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact CCHA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bL-FF-yMI">
+                                        <rect key="frame" x="158" y="57" width="452" height="83"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="70"/>
+                                        <color key="textColor" red="0.86318260729999996" green="0.83742288629999995" blue="0.33045871310000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K8-1b-ITb">
+                                        <rect key="frame" x="338" y="151" width="93" height="60"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                        <state key="normal" title="Email">
+                                            <color key="titleColor" red="0.26269191629999999" green="0.32377292800000002" blue="0.31731850589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ipademailbuttonpressed:" destination="kfo-e9-bCE" eventType="touchUpInside" id="jMb-Lj-AGV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCH-HX-SMD">
+                                        <rect key="frame" x="315" y="241" width="139" height="60"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                        <state key="normal" title="Website">
+                                            <color key="titleColor" red="0.26269191629999999" green="0.32377292800000002" blue="0.31731850589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="websiteButtonPress:" destination="kfo-e9-bCE" eventType="touchUpInside" id="7H2-Sw-nbx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxf-TZ-8cN">
+                                        <rect key="frame" x="313" y="315" width="143" height="60"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                        <state key="normal" title="Address">
+                                            <color key="titleColor" red="0.26269191629999999" green="0.32377292800000002" blue="0.31731850589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ENG-ie-WN7" kind="push" id="wy4-Ah-mMG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSL-98-rdH">
+                                        <rect key="frame" x="238" y="382" width="293" height="60"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                        <state key="normal" title="@SchoolCounsel">
+                                            <color key="titleColor" red="0.26269191629999999" green="0.32377292800000002" blue="0.31731850589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="followTwitterButton:" destination="kfo-e9-bCE" eventType="touchUpInside" id="fpu-gi-azo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkM-Mv-ZII">
+                                        <rect key="frame" x="277" y="450" width="214" height="60"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                        <state key="normal" title="@CCHALaw">
+                                            <color key="titleColor" red="0.26269191629999999" green="0.32377292800000002" blue="0.31731850589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="followTwitterButton:" destination="kfo-e9-bCE" eventType="touchUpInside" id="Hgu-CD-HFg"/>
+                                            <action selector="followTwitterButtonOther:" destination="kfo-e9-bCE" eventType="touchUpInside" id="P3R-SY-YfL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bh5-cx-hPz">
+                                        <rect key="frame" x="238" y="518" width="292" height="60"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                        <state key="normal" title="CCHA Facebook">
+                                            <color key="titleColor" red="0.26269191629999999" green="0.32377292800000002" blue="0.31731850589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="followFacebookButton:" destination="kfo-e9-bCE" eventType="touchUpInside" id="N5b-Et-0dV"/>
+                                            <action selector="followTwitterButton:" destination="kfo-e9-bCE" eventType="touchUpInside" id="aBZ-7J-F8g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19728100179999999" green="1" blue="0.93982318710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="4K8-1b-ITb" firstAttribute="top" secondItem="9bL-FF-yMI" secondAttribute="bottom" constant="11" id="2f9-yL-6MG"/>
+                                    <constraint firstItem="jCH-HX-SMD" firstAttribute="centerX" secondItem="sxf-TZ-8cN" secondAttribute="centerX" id="7Gd-nn-TxB"/>
+                                    <constraint firstAttribute="trailing" secondItem="9bL-FF-yMI" secondAttribute="trailing" constant="158" id="Bb3-P4-aVT"/>
+                                    <constraint firstItem="jCH-HX-SMD" firstAttribute="centerX" secondItem="4K8-1b-ITb" secondAttribute="centerX" id="Gv2-C7-0ef"/>
+                                    <constraint firstItem="zkM-Mv-ZII" firstAttribute="top" secondItem="MSL-98-rdH" secondAttribute="bottom" constant="8" symbolic="YES" id="NnX-W5-TVf"/>
+                                    <constraint firstItem="sxf-TZ-8cN" firstAttribute="top" secondItem="jCH-HX-SMD" secondAttribute="bottom" constant="14" id="OQE-dj-sEK"/>
+                                    <constraint firstItem="Bh5-cx-hPz" firstAttribute="centerX" secondItem="I2P-Df-gGI" secondAttribute="centerX" id="UGE-H1-4fu"/>
+                                    <constraint firstItem="MSL-98-rdH" firstAttribute="centerX" secondItem="zkM-Mv-ZII" secondAttribute="centerX" id="VSx-GF-GPe"/>
+                                    <constraint firstItem="MSL-98-rdH" firstAttribute="leading" secondItem="Bh5-cx-hPz" secondAttribute="leading" id="VWF-wN-Ejo"/>
+                                    <constraint firstItem="Bh5-cx-hPz" firstAttribute="top" secondItem="zkM-Mv-ZII" secondAttribute="bottom" constant="8" symbolic="YES" id="aSU-O3-iH6"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bh5-cx-hPz" secondAttribute="bottom" constant="382" id="aXS-h6-sR3"/>
+                                    <constraint firstItem="zkM-Mv-ZII" firstAttribute="centerY" secondItem="I2P-Df-gGI" secondAttribute="centerY" id="amx-gO-3CZ"/>
+                                    <constraint firstItem="jCH-HX-SMD" firstAttribute="top" secondItem="4K8-1b-ITb" secondAttribute="bottom" constant="30" id="f53-BX-2Vc"/>
+                                    <constraint firstItem="MSL-98-rdH" firstAttribute="top" secondItem="sxf-TZ-8cN" secondAttribute="bottom" constant="7" id="mzm-dD-CJp"/>
+                                    <constraint firstItem="4K8-1b-ITb" firstAttribute="centerX" secondItem="9bL-FF-yMI" secondAttribute="centerX" id="qNP-0L-zGs"/>
+                                    <constraint firstItem="MSL-98-rdH" firstAttribute="centerX" secondItem="sxf-TZ-8cN" secondAttribute="centerX" id="sjO-Fo-p0V"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I2P-Df-gGI" firstAttribute="bottom" secondItem="6Jt-yC-lYk" secondAttribute="top" id="Pge-Du-wXC"/>
+                            <constraint firstItem="I2P-Df-gGI" firstAttribute="top" secondItem="z0w-jr-Rjq" secondAttribute="bottom" id="QO6-sj-bX1"/>
+                            <constraint firstAttribute="trailing" secondItem="I2P-Df-gGI" secondAttribute="trailing" id="ZHm-Br-FGp"/>
+                            <constraint firstItem="I2P-Df-gGI" firstAttribute="leading" secondItem="ufJ-kx-tXI" secondAttribute="leading" id="cA1-TN-qhI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contact" id="ww2-GG-fCf"/>
+                    <connections>
+                        <outlet property="ContanctScrollViewIPAD" destination="I2P-Df-gGI" id="6zO-ar-YnC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iaZ-gj-a5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="1599"/>
+        </scene>
+        <!--Address View Controller-->
+        <scene sceneID="wSU-UY-wRI">
+            <objects>
+                <viewController id="ENG-ie-WN7" customClass="AddressViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gh6-Yi-kRi"/>
+                        <viewControllerLayoutGuide type="bottom" id="KJI-Hj-WfA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q4S-nj-fia">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="309" translatesAutoresizingMaskIntoConstraints="NO" id="Wtn-le-8So">
+                                <rect key="frame" x="279" y="277" width="211" height="72"/>
+                                <string key="text">Central Indiana
+Two North Ninth Street, Noblesville, IN 46060</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.26269191629999999" green="0.32377292800000002" blue="0.31731850589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="241" translatesAutoresizingMaskIntoConstraints="NO" id="8hd-nU-8nW">
+                                <rect key="frame" x="295" y="445" width="178" height="72"/>
+                                <string key="text">Northern Indiana
+90-B 90th Drive, Merrillville, IN 46410</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.26269191629999999" green="0.32377292800000002" blue="0.31731850589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmg-nU-DFL">
+                                <rect key="frame" x="364" y="369" width="40" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="firstmappressd:" destination="ENG-ie-WN7" eventType="touchUpInside" id="Qd4-hi-Go8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CCHA’s School Law Attorneys work out of two primary locations:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="532" translatesAutoresizingMaskIntoConstraints="NO" id="bIX-6R-30g">
+                                <rect key="frame" x="118" y="82" width="532" height="142"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="0.86318260729999996" green="0.83742288629999995" blue="0.33045871310000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSZ-7m-k5Y">
+                                <rect key="frame" x="364" y="537" width="40" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="secondmappressed:" destination="ENG-ie-WN7" eventType="touchUpInside" id="bGC-kQ-Cht"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qmg-nU-DFL" firstAttribute="top" secondItem="Wtn-le-8So" secondAttribute="bottom" constant="20" id="1bv-1d-rsz"/>
+                            <constraint firstAttribute="centerX" secondItem="bIX-6R-30g" secondAttribute="centerX" id="33h-Ov-306"/>
+                            <constraint firstAttribute="centerX" secondItem="8hd-nU-8nW" secondAttribute="centerX" id="6T8-TR-Qff"/>
+                            <constraint firstAttribute="centerX" secondItem="Qmg-nU-DFL" secondAttribute="centerX" id="Ft8-Cn-G2d"/>
+                            <constraint firstItem="bSZ-7m-k5Y" firstAttribute="top" secondItem="8hd-nU-8nW" secondAttribute="bottom" constant="20" id="LHq-d8-RJQ"/>
+                            <constraint firstItem="Wtn-le-8So" firstAttribute="top" secondItem="bIX-6R-30g" secondAttribute="bottom" constant="53" id="LPL-EQ-3jC"/>
+                            <constraint firstItem="8hd-nU-8nW" firstAttribute="top" secondItem="Qmg-nU-DFL" secondAttribute="bottom" constant="40" id="UaR-og-3uh"/>
+                            <constraint firstAttribute="centerX" secondItem="bSZ-7m-k5Y" secondAttribute="centerX" id="fhC-Ac-Hef"/>
+                            <constraint firstItem="bIX-6R-30g" firstAttribute="top" secondItem="gh6-Yi-kRi" secondAttribute="bottom" constant="18" id="kgQ-Lu-ouS"/>
+                            <constraint firstAttribute="centerX" secondItem="Wtn-le-8So" secondAttribute="centerX" id="uD0-3m-NNw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="paJ-0v-0gu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGq-aA-da1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="3173"/>
+        </scene>
+        <!--Other Resources-->
+        <scene sceneID="qZw-Bs-RwU">
+            <objects>
+                <viewController id="0ev-8s-4m8" customClass="OtherResourcesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q6i-uW-Sse"/>
+                        <viewControllerLayoutGuide type="bottom" id="4MP-D1-vLp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Ab-FA-nmD">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ch-Ha-96Z">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkI-Hd-SQY">
+                                        <rect key="frame" x="53" y="147" width="458" height="49"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <state key="normal" title="Indiana Department of Education">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ideoPush:" destination="0ev-8s-4m8" eventType="touchUpInside" id="yIl-76-2Pb"/>
+                                            <segue destination="LFo-IU-1Ff" kind="push" id="oDF-dk-6KW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="keY-fI-uzk">
+                                        <rect key="frame" x="53" y="233" width="605" height="49"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <state key="normal" title="Indiana Attorney General Advisory Opinions"/>
+                                        <connections>
+                                            <action selector="agaPressed:" destination="0ev-8s-4m8" eventType="touchUpInside" id="b4b-GB-mHw"/>
+                                            <segue destination="LFo-IU-1Ff" kind="push" id="id3-f9-k6e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="aE6-fZ-6GR">
+                                        <rect key="frame" x="53" y="312" width="662" height="49"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <state key="normal" title="Indiana Education Employment Relations Board"/>
+                                        <connections>
+                                            <action selector="EERpressed:" destination="0ev-8s-4m8" eventType="touchUpInside" id="PX4-5y-ujI"/>
+                                            <segue destination="LFo-IU-1Ff" kind="push" id="Piq-8e-fbC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPe-xC-uod">
+                                        <rect key="frame" x="53" y="391" width="456" height="49"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <state key="normal" title="Indiana Public Access Counselor">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="iPacPressed:" destination="0ev-8s-4m8" eventType="touchUpInside" id="YX7-mK-lpl"/>
+                                            <segue destination="LFo-IU-1Ff" kind="push" id="ni9-7M-Hh7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zMP-V7-eCA">
+                                        <rect key="frame" x="53" y="470" width="498" height="49"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <state key="normal" title="ISBOA School Corporations Manual">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ISBOApressed:" destination="0ev-8s-4m8" eventType="touchUpInside" id="Sr5-mo-J4Z"/>
+                                            <segue destination="LFo-IU-1Ff" kind="push" id="zb8-L2-qKa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHX-7q-fCf">
+                                        <rect key="frame" x="53" y="549" width="484" height="49"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <state key="normal" title="Indiana School Boards Association">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="thisPressed:" destination="0ev-8s-4m8" eventType="touchUpInside" id="Yct-6e-C1b"/>
+                                            <segue destination="LFo-IU-1Ff" kind="push" id="Oqx-L4-MM6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ih-cT-wHA">
+                                        <rect key="frame" x="53" y="628" width="462" height="49"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <state key="normal" title="DLGF School Budget Information">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gfPressed:" destination="0ev-8s-4m8" eventType="touchUpInside" id="APU-EI-Gdv"/>
+                                            <segue destination="LFo-IU-1Ff" kind="push" id="EFa-eO-ztB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ifc-n2-XvT">
+                                        <rect key="frame" x="53" y="793" width="357" height="49"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <state key="normal" title="U.S. Department of Labor">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="depOfLab:" destination="0ev-8s-4m8" eventType="touchUpInside" id="qqg-M3-Lqc"/>
+                                            <segue destination="LFo-IU-1Ff" kind="push" id="t8s-vm-MCe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoB-8i-vNt">
+                                        <rect key="frame" x="53" y="707" width="348" height="49"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <state key="normal" title="U.S. DOE Reading Room">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="readRoomPressed:" destination="0ev-8s-4m8" eventType="touchUpInside" id="Ibv-4I-fz9"/>
+                                            <segue destination="LFo-IU-1Ff" kind="push" id="6yv-JJ-2VK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96421329392661081" green="0.97223796309167454" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ifc-n2-XvT" firstAttribute="top" secondItem="aoB-8i-vNt" secondAttribute="bottom" constant="37" id="3Xy-Lq-dJI"/>
+                                    <constraint firstItem="VPe-xC-uod" firstAttribute="centerX" secondItem="aE6-fZ-6GR" secondAttribute="centerX" constant="-103" id="5JR-aB-qBY"/>
+                                    <constraint firstItem="aE6-fZ-6GR" firstAttribute="top" secondItem="keY-fI-uzk" secondAttribute="bottom" constant="30" id="7Xo-JS-ALa"/>
+                                    <constraint firstItem="fHX-7q-fCf" firstAttribute="centerX" secondItem="zMP-V7-eCA" secondAttribute="centerX" constant="-7" id="9Zx-rc-oo7"/>
+                                    <constraint firstItem="aoB-8i-vNt" firstAttribute="centerX" secondItem="5Ih-cT-wHA" secondAttribute="centerX" constant="-57" id="BmB-hD-E1T"/>
+                                    <constraint firstAttribute="bottom" secondItem="ifc-n2-XvT" secondAttribute="bottom" constant="182" id="FXC-Ko-sDl"/>
+                                    <constraint firstItem="zMP-V7-eCA" firstAttribute="top" secondItem="VPe-xC-uod" secondAttribute="bottom" constant="30" id="Hiu-kI-tVL"/>
+                                    <constraint firstItem="VPe-xC-uod" firstAttribute="centerX" secondItem="zMP-V7-eCA" secondAttribute="centerX" constant="-21" id="LqS-th-XMY"/>
+                                    <constraint firstItem="jkI-Hd-SQY" firstAttribute="top" secondItem="4ch-Ha-96Z" secondAttribute="top" constant="147" id="NDs-bK-Y18"/>
+                                    <constraint firstItem="aoB-8i-vNt" firstAttribute="centerX" secondItem="4ch-Ha-96Z" secondAttribute="centerX" constant="-157" id="NS5-l1-Bcz"/>
+                                    <constraint firstItem="keY-fI-uzk" firstAttribute="centerX" secondItem="aE6-fZ-6GR" secondAttribute="centerX" constant="-28.5" id="P9f-8N-dJp"/>
+                                    <constraint firstItem="fHX-7q-fCf" firstAttribute="top" secondItem="zMP-V7-eCA" secondAttribute="bottom" constant="30" id="WtQ-vQ-ydR"/>
+                                    <constraint firstItem="ifc-n2-XvT" firstAttribute="centerX" secondItem="aoB-8i-vNt" secondAttribute="centerX" constant="4.5" id="Xqv-NE-grY"/>
+                                    <constraint firstItem="VPe-xC-uod" firstAttribute="top" secondItem="aE6-fZ-6GR" secondAttribute="bottom" constant="30" id="Z5a-p6-KT9"/>
+                                    <constraint firstAttribute="trailing" secondItem="aE6-fZ-6GR" secondAttribute="trailing" constant="53" id="Zak-3n-8Ho"/>
+                                    <constraint firstItem="keY-fI-uzk" firstAttribute="top" secondItem="jkI-Hd-SQY" secondAttribute="bottom" constant="37" id="eap-lD-f7T"/>
+                                    <constraint firstItem="aoB-8i-vNt" firstAttribute="top" secondItem="5Ih-cT-wHA" secondAttribute="bottom" constant="30" id="fvq-eW-l9P"/>
+                                    <constraint firstItem="5Ih-cT-wHA" firstAttribute="top" secondItem="fHX-7q-fCf" secondAttribute="bottom" constant="30" id="jOj-S7-yeW"/>
+                                    <constraint firstItem="5Ih-cT-wHA" firstAttribute="centerX" secondItem="fHX-7q-fCf" secondAttribute="centerX" constant="-11" id="k8n-hs-eOY"/>
+                                    <constraint firstItem="keY-fI-uzk" firstAttribute="centerX" secondItem="jkI-Hd-SQY" secondAttribute="centerX" constant="73.5" id="quH-yZ-NPy"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4ch-Ha-96Z" secondAttribute="trailing" id="1fF-I3-g4E"/>
+                            <constraint firstItem="4ch-Ha-96Z" firstAttribute="bottom" secondItem="4MP-D1-vLp" secondAttribute="top" id="3eC-M5-8nQ"/>
+                            <constraint firstItem="4ch-Ha-96Z" firstAttribute="top" secondItem="0Ab-FA-nmD" secondAttribute="top" id="Z86-7j-nSc"/>
+                            <constraint firstItem="4ch-Ha-96Z" firstAttribute="leading" secondItem="0Ab-FA-nmD" secondAttribute="leading" id="grB-ka-Hqm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Other Resources" id="Hjb-xc-u94"/>
+                    <connections>
+                        <outlet property="othersScrollViewIPAD" destination="4ch-Ha-96Z" id="cri-pV-alR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNX-IE-dKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2191" y="1724"/>
+        </scene>
+        <!--Other Resources Web View View Controller-->
+        <scene sceneID="94d-X6-2lM">
+            <objects>
+                <viewController id="LFo-IU-1Ff" customClass="otherResourcesWebViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VuO-x1-Ifi"/>
+                        <viewControllerLayoutGuide type="bottom" id="LCO-um-DpN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CRd-X1-yNO">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sqB-oc-1X4">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LCO-um-DpN" firstAttribute="top" secondItem="sqB-oc-1X4" secondAttribute="bottom" id="3bj-9H-FUP"/>
+                            <constraint firstAttribute="trailing" secondItem="sqB-oc-1X4" secondAttribute="trailing" id="JqU-tp-AEq"/>
+                            <constraint firstItem="sqB-oc-1X4" firstAttribute="leading" secondItem="CRd-X1-yNO" secondAttribute="leading" id="LRN-kY-Ian"/>
+                            <constraint firstItem="sqB-oc-1X4" firstAttribute="top" secondItem="CRd-X1-yNO" secondAttribute="top" id="c1a-Kg-PPf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pua-ZD-Q2Z"/>
+                    <connections>
+                        <outlet property="ipadWEbViewx" destination="sqB-oc-1X4" id="NRF-6r-iWP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OlO-Ns-dBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3592" y="1669"/>
+        </scene>
+        <!--CCHA Guidance-->
+        <scene sceneID="7V4-Bb-VfD">
+            <objects>
+                <viewController id="LY6-H1-kGc" customClass="CCHAGuidanceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pfL-CY-bYC"/>
+                        <viewControllerLayoutGuide type="bottom" id="2i4-wL-ida"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SfG-Pq-GBy">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acA-hv-p4a">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="acA-hv-p4a" secondAttribute="bottom" id="50H-Jo-YXt"/>
+                            <constraint firstItem="acA-hv-p4a" firstAttribute="top" secondItem="pfL-CY-bYC" secondAttribute="bottom" id="INZ-4e-Nc5"/>
+                            <constraint firstAttribute="trailing" secondItem="acA-hv-p4a" secondAttribute="trailing" id="Nag-WT-fOg"/>
+                            <constraint firstItem="acA-hv-p4a" firstAttribute="leading" secondItem="SfG-Pq-GBy" secondAttribute="leading" id="gRO-vw-Ipw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CCHA Guidance" id="6Fd-zL-Nhe">
+                        <barButtonItem key="rightBarButtonItem" title="Back" id="XgM-Sa-peU">
+                            <connections>
+                                <action selector="backButtonTapped:" destination="LY6-H1-kGc" id="oyw-4r-Rf1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="newsletterWebView" destination="acA-hv-p4a" id="Oxn-ID-3W9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VLq-Bf-ui4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="1705"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CCHA-horizontal2.jpg" width="800" height="106"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="zb8-L2-qKa"/>
+    </inferredMetricsTieBreakers>
+</document>

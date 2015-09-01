@@ -1,0 +1,21 @@
+/* 
+  README.strings
+  CCHA App
+
+  Created by Zack Baker on 4/17/14.
+  Copyright (c) 2014 CCHA. All rights reserved.
+
+
+Please follow these instructions to add elements in plist.
+
+1) SchoolLaw.plist is the file that contains all the data. Please dont change name of this file
+2) Top level dictionary name(School Law) is also embedded in the code, Please dont change this name.
+If these names needs to be change in any specific case, Please edit the ViewControl.m file for the same.
+3) All elements of this file should be of NSDisctionary type.
+4) Searching logic are based on file name, So, Please make sure that every PDF file has unique name.
+
+Thanks
+
+
+
+*/
